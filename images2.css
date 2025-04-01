@@ -1,0 +1,169 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Settings */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* EC-Officer Section */
+.ec-officer {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.ec-box {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ec-box h4 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.ec-box p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Photo Gallery Section */
+.photo-gallery {
+    border: 8px solid skyblue;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.photo-frame {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-frame img:hover {
+    transform: scale(1.05);
+}
+
+/* Right Section */
+./*right-section {
+    background: #eef2ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.photo-image{
+  }*/
+
+/* Photo Image Styling */
+.photo-image {
+    margin-bottom: 15px;
+}
+
+.photo-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 400px; /* You can adjust the max height */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+/* Video Image Styling */
+.photo-video a img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-video a img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .ec-officer, .right-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .col-md-2, .col-md-7, .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .photo-gallery {
+        border: none;
+        padding: 5px;
+    }
+
+    .ec-box {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .photo-frame {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ec-officer, .right-section {
+        padding: 10px;
+    }
+
+    .photo-gallery {
+        border: none;
+        padding: 5px;
+    }
+
+    .col-md-2, .col-md-7, .col-md-3 {
+        width: 100%;
+    }
+
+    .photo-frame img {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .ec-box h4 {
+        font-size: 0.9rem;
+    }
+
+    .ec-box p {
+        font-size: 0.8rem;
+    }
+
+    .photo-frame img {
+        height: auto;
+        max-width: 100%;
+    }
+}
